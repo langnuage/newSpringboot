@@ -21,5 +21,9 @@ public class HeroService {
         return heroMapper.selectByExample(heroExample);
     }
 
+    public hero getById(int id) {
+        return heroMapper.selectByPrimaryKey(id);
+    }
+
 
 }
